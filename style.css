@@ -1,0 +1,480 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+}
+body{
+     font-family: "Winky Sans", sans-serif;
+}
+/*start header*/
+.logo{
+    width:100px;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    height:100vh;
+    background: url("./img/home_bg.jpeg") center center/ cover no-repeat ;
+     
+   
+   
+}
+header .navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 100px;
+}
+.nav li a{
+    
+    text-decoration: none;
+    list-style: none;
+    padding-right: 10px;
+    font-size: 18px;
+    
+    
+}
+.nav li{
+    
+    display:inline-block;
+    margin-left: 20px;
+    
+}
+.nav li a{
+    display:inline-block;
+    transition: all 0.3 ease;
+}
+.nav li a:hover{
+    border-bottom: solid #f7bd1b;
+    
+    transform: scale(1.4);
+}
+header .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:75vh;
+    gap:13px;
+    font-size: large;
+}
+.flt{
+    color:#f7bd1b;
+}
+.T1{
+    color:#fff;
+    
+}
+.Book-btn{
+    border:2px solid;
+    padding: 6px 24px;
+    border-radius: 10px;
+}
+.Book-btn:hover{
+    cursor: pointer;
+    background-color: #f7bd1b;
+}
+header::before{
+    content:"";
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    position:absolute;
+    background-color:rgba(0,0,0,0.6);
+}
+header *{
+     z-index:10;
+}
+/*End header*/
+
+/*start about*/
+main #about{
+   
+    height:80vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+main #about .container .about-content{
+    
+    display:flex;
+    justify-content: space-between;
+}
+#about .title{
+    
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#about .title h2{
+    color:#383848;
+    font-size: 40px;
+ 
+}
+#about .title p{
+    color:#9a9a9a;
+    font-size: small;
+}
+#about .container .about-content .text-about{
+    line-height: 1.6rem;
+    margin-right: 6rem;
+    
+    
+}
+.text-about p{
+    width:683px;
+    font-weight: 500;
+    color:#9a9a9a;
+    
+}
+
+.text-about{
+    position:relative;
+}
+
+.text-about a{
+    padding:8px 20px;
+    cursor:pointer;
+    position:absolute;
+    background-color: #383848;
+    border-radius: 15px;
+    margin-top:15px;
+    color:#fff;
+   
+}
+.text-about a:hover{
+    background-color: #f7bd1b;
+}
+
+
+#about .container img{
+    width:450px;
+  
+}
+
+/*End about*/
+
+/*start offers*/
+
+#offers{
+    height:80vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: url("./img/offer-background.jpg");
+    display:flex;
+   
+}
+
+#offers .offers-items{
+    display:flex;
+}
+
+#offers .container .title{
+    text-align: center;
+    margin-bottom: 4rem;
+    
+}
+#offers .container .title h2{
+    font-size: 40px;
+    color:#f7bd1b;
+}
+
+#offers .container .title p{
+    color:#9a9a9a;
+    font-weight: 600;
+    font-size: small;
+}
+
+#offers .container .offers-items {
+    
+    text-align: center;
+    color:#fff;
+    
+}
+#offers .container .offers-items h3{
+    margin:0 15px;
+    margin-bottom: 0.8rem;
+}
+
+#offers .container .offers-items p{
+    font-weight: 100;
+    width: 350px;
+    color:#9a9a9a;
+    padding:0 20px;
+}
+#offers .container .offers-items  .disc{
+    color:#f7bd1b;
+    margin:0.7rem;
+}
+
+
+/*End offers*/
+
+/*Start Menu*/
+
+#menu{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  
+}
+
+#menu .container .title{
+   text-align: center;
+   margin-top: 2rem;
+}
+
+#menu .container .title h2{
+    font-size: 40px;
+    color:#383848;
+}
+
+#menu .container .title p{
+    color:#9a9a9a;
+    font-weight: 600;
+    font-size: small;
+}
+
+
+#menu .container .menu-items{
+    display:flex;
+    margin-top:4rem;
+    
+  
+}
+#menu .container .menu-items .menu-item img{
+    width:80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+#menu .container .menu-items .menu-item p{
+    font-weight: 100;
+    width: 300px;
+    margin-top:10px;
+    
+}
+#menu .container .menu-items .menu-item h3{
+   color:#383848;
+    font-weight: 600;
+    font-size: large;
+    border-bottom: 1px dashed #c2bdbd;
+   position: relative;
+    margin-bottom: 8px;
+    padding:5px;
+}
+
+.pr{
+   position: absolute;
+   
+    color:#f7bd1b;
+   right:0;
+    top:0;
+}
+
+.menu-item{
+    display: flex;
+    margin:40px 30px;
+}
+#menu .container{
+    position:relative;
+}
+.EFM{
+    display:block;
+    margin: 0 auto 40px;
+    padding:12px 26px;
+   border-radius: 15px;
+     background-color:  #f7cd1b;
+    color:#fff;
+    border:3px;
+    
+}
+.EFM:hover{
+    background-color: #383848;
+}
+
+
+/*End Menu*/
+
+/*Start daytime*/
+
+#day-time .container{
+    display:flex;
+    height:40vh;
+    justify-content: space-evenly;
+    align-items: center;
+    background: url("./img/daytime_bg.jpeg") center center/cover fixed no-repeat;
+}
+
+#day-time .container .day-time-items{
+    display:flex;
+    
+    
+    
+}
+
+#day-time .container .day-time-items .day-time-item{
+    margin:0 45px;
+    text-align: center;
+    color:#fff;
+}
+
+#day-time .container .day-time-items .day-time-item h3{
+    font-size: 25px;
+    font-family: "Lobster Two", sans-serif;
+}
+
+#day-time .container .day-time-items .day-time-item p{
+    font-weight: 100;
+}
+
+
+/*End daytime*/
+
+/*start food gallery*/
+#gallery .container{
+    /*display: flex;*/
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    background: url("./img/offer-background.jpg") center center/cover no-repeat;
+    padding:8rem 0 6rem;
+    color:#fff;
+}
+#gallery .container .food-gallery img{
+    width:280px;
+    height:200px;
+    border-radius: 15px;
+    margin:20px 51px;
+    opacity: 0.8;
+}
+#gallery .container .food-gallery img:hover{
+ 
+    opacity: 1;
+}
+#gallery .container .food-gallery{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: wrap;
+}
+
+#gallery .container h3{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 45px;
+}
+
+/*End food gallery*/
+/*Start Contact*/
+#contact .container{
+    display:flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:20px 10px;
+}
+
+#contact .container .contact-content{
+    margin:4rem;
+}
+
+
+#contact .container .contact-content .contact-info div{
+    margin:3rem;
+    line-height: 1.7rem;
+    font-size: large;
+   
+}
+#contact .container .contact-content .contact-info div h3{
+    margin-bottom: 10px;
+    font-size: 25px;
+    color:#383848;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+#contact .container .contact-content .contact-info div p{
+  font-weight: 300;
+    color:#c2bdbd;
+    
+}
+#contact .container .contact-content .contact-info div i{
+    margin-right: 6px;
+    color:#f7cd1b;
+}
+
+#contact .container .contact-content .contact-info div a i{
+    background-color: #383848;
+    color:#fff;
+    font-size: 11px;
+    border-radius: 50%;
+    padding:11px 13px;
+    margin-right: -2.5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#contact .container .contact-content .contact-info div a i:hover{
+    background-color:#f7cd1b;
+    color:#000000;
+   
+}
+
+form input,textarea{
+    display: block;
+    width:476px;
+    padding:14px;
+    margin:25px 10px;
+    border:none;
+    background-color: #e3e2dd;
+    
+}
+form{
+    margin-bottom: 32px;
+    
+}
+
+form .SM{
+    color:#fff;
+    background-color: #f7cd1b;
+    padding:11px 18px;
+    border-radius: 10px;
+    border:none;
+    margin-left: 8px;
+    cursor: pointer;
+}
+form .SM:hover{
+    background-color: #383848;
+}
+
+#footer{
+    color:#fff;
+    background-color: #383848;
+    padding:15px 0;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+#footer a{
+    color:#fff;
+    text-decoration: none;
+}
+
+
+
+
+/*End Contact*/
+
